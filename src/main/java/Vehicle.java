@@ -83,7 +83,7 @@ public class Vehicle {
 
     public DescentEvent getStatus(int tick) {
         // create a return a new DescentEvent object
-        return new DescentEvent(10,10,10,10, 10);
+        return new DescentEvent(10,Velocity,Fuel,Altitude, 1);
         // filled in with the state of the vehicle.
     }
 
