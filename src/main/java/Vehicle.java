@@ -2,8 +2,8 @@ public class Vehicle {
 
     public Vehicle(int InitialAltitude) {
         // initialize the altitude AND previous altitude to initialAltitude
-        Altitude = Simulation.randomaltitude();
-        PrevAltitude = Altitude;
+        Altitude = InitialAltitude;
+        PrevAltitude = InitialAltitude;
     }
 
     int Gravity = 100;
