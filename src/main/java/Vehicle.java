@@ -31,6 +31,10 @@ public class Vehicle {
 
     public Vehicle() {}
 
+    public int getFlying() {
+        return Flying;
+    }
+
     public String checkFinalStatus() {
         String s = "";
         if (this.Altitude <= 0) {
@@ -83,7 +87,7 @@ public class Vehicle {
 
     public DescentEvent getStatus(int tick) {
         // create a return a new DescentEvent object
-        return new DescentEvent(10,Velocity,Fuel,Altitude, 1);
+        return new DescentEvent(tick,Velocity,Fuel,Altitude, Flying);
         // filled in with the state of the vehicle.
     }
 
